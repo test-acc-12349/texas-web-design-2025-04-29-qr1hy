@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Web Design - Professional Web Development Services</title>
+    <meta name="description" content="Premium web design services in Texas offering free hosting, fast loading, and custom designs. Expert web development solutions for your business.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-300">
+                    TWD
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                </div>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full hidden md:block transition-all duration-300 hover:scale-105">
+                    Get Started
+                </button>
+                <button @click="isOpen = !isOpen" class="md:hidden text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div x-show="isOpen" class="md:hidden mt-4 space-y-4" @click.away="isOpen = false">
+                <a href="#features" class="block text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                <a href="#faq" class="block text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative pt-32 pb-24 lg:pt-40 lg:pb-32 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                        Texas Web Design
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
+                        Premium web design solutions crafted for Texas businesses. Fast, modern, and conversion-focused.
+                    </p>
+                    <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-blue-500/25">
+                        Start Your Project
+                    </a>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
+        </section>
+
+        <section id="features" class="py-24 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Premium Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 rounded-xl p-8 hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                        <div class="text-blue-400 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Free Hosting</h3>
+                        <p class="text-gray-400">Premium hosting included with every website, ensuring maximum uptime and performance.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-8 hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                        <div class="text-blue-400 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Fast Loading</h3>
+                        <p class="text-gray-400">Optimized performance with lightning-fast page loads and smooth interactions.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-8 hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                        <div class="text-blue-400 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Custom Design</h3>
+                        <p class="text-gray-400">Uniquely crafted designs that perfectly match your brand and business goals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-24 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Us</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="text-center">
+                        <div class="bg-blue-600/10 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                            <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Low Cost</h3>
+                        <p class="text-gray-400">Competitive pricing without compromising on quality or features.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-600/10 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                            <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">High CTR</h3>
+                        <p class="text-gray-400">Optimized designs that drive engagement and conversions.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-600/10 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                            <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">SEO Optimized</h3>
+                        <p class="text-gray-400">Built-in SEO best practices for better search engine rankings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-gray-900" x-data="{selected:null}">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <div class="bg-gray-800 rounded-lg">
+                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full p-6 focus:outline-none">
+                            <span class="font-semibold text-left">What's included in your web design services?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 1" class="p-6 pt-0">
+                            <p class="text-gray-400">Our web design services include custom design, development, responsive layouts, SEO optimization, and free hosting. We also provide ongoing support and maintenance.</p>
+                        </div>
+                    </div>
+                    <!-- Additional FAQ items would go here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-gradient-to-b from-gray-800 to-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Get Started?</h2>
+                    <p class="text-xl text-gray-300 mb-12">Contact us today to discuss your project</p>
+                    <a href="mailto:admin@twd.com" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-blue-500/25">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Texas Web Design</h3>
+                    <p class="text-gray-400">Premium web design services for Texas businesses.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400">admin@twd.com</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 Texas Web Design. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
